@@ -1,0 +1,7 @@
+flask~=1.1.2
+requests~=2.24.0
+wtforms~=3.0.1
+flask_uploads
+flask_Reuploaded
+Authlib
+flask_wtf
