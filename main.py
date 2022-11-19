@@ -161,8 +161,8 @@ def login():
 @app.route('/time', methods=['GET'])
 @jwt_required()
 def check():
-    x=datetime.datetime.now()
-    return print(x)
+    x=str(datetime.datetime.now())
+    return x
 
 
 with app.test_request_context():
