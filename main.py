@@ -77,10 +77,10 @@ def uploadImage():
 
 
 @app.route('/prime/<number>')
-def isPrime(prime):
-    if simplify(prime).is_prime == True:
+def isPrime(number):
+    if simplify(number).is_prime == True:
         return "Liczba jest liczbą pierwszą"
-    if simplify(prime).is_prime == False:
+    if simplify(number).is_prime == False:
         return "Liczba nie jest liczbą pierwszą"
 
 
@@ -161,7 +161,7 @@ def login():
 @app.route('/time', methods=['GET'])
 @jwt_required()
 def check():
-    x=str(datetime.datetime.now())
+    x=str(datetime.now())
     return x
 
 
